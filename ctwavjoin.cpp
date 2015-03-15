@@ -145,8 +145,10 @@ int main(int numberOfArgs, char ** args) {
 
   }
 
+
+
   short * mixedOutput;
-  mixedOutput = new short [ durationOfOutput * 2];
+  mixedOutput = new short [ durationOfOutput * 2 ];
 
   index = 0;
   while (index < durationOfOutput) {
@@ -156,6 +158,8 @@ int main(int numberOfArgs, char ** args) {
 
     index++;
   }
+
+
 
   writeWAVData( outputFileName, mixedOutput, durationOfOutput * 4, 44100, 2);
 
