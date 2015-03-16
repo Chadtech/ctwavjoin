@@ -91,7 +91,7 @@ int main(int numberOfArgs, char ** args) {
     outputDataLeft[ indexl + lastPlacement] = thisSampleLeft;
 
     short thisSampleRight = short(lastFile.get());
-          thisSampleRight = short(lastFile.get()) * 256;
+          thisSampleRight += short(lastFile.get()) * 256;
 
     outputDataRight[ indexl + lastPlacement ] = thisSampleRight;
 
